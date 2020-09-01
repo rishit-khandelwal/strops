@@ -1,4 +1,3 @@
-pub mod strops {
 #![allow(dead_code)]
 use std::convert::TryInto;
 pub fn strin(s: &String, n: u32) -> char {
@@ -64,5 +63,4 @@ pub fn strsplit(s : &String, w:char) -> Vec<String> {
 		ret.push(tmp);
 	}
 	ret
-}
 }
