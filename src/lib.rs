@@ -10,9 +10,17 @@ pub fn strin(s: &String, n: u32) -> char {
 		}
 		x+=1;
 	}
+	retfn matmul(mut m1: Vec<i32>,mut m2: Vec<i32>) -> Vec<i32> {
+	let mut ret = Vec::new();
+	
+	while let Some(i) = m1.pop() {
+		while let Some(j) = m2.pop() {
+    		ret.push(i*j);
+    	}
+	}
+
 	ret
 }
-
 pub fn strcmp(s1: &String,s2: &String) -> i8{
 	// Return 0:  Strings match
 	// Return 1:  Unmatched char found
